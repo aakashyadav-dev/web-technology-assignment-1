@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scenario 4 · Grade Calculator</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="page">
+    <nav class="nav">
+      <a href="../index.html">← Assignment I</a>
+      <span class="pill">Scenario 4</span>
+    </nav>
+
+    <header class="hero">
+      <span class="eyebrow">SCENARIO 04</span>
+      <h1>Student Grade Calculator</h1>
+      <p>Enter marks for five subjects. The JavaScript program calculates total, average, grade and pass/fail status.</p>
+    </header>
+
+    <section class="section">
+      <div class="form-grid">
+        <div class="field">
+          <label for="s1">Subject 1</label>
+          <input class="mark" id="s1" type="number" min="0" max="100" value="85">
+        </div>
+        <div class="field">
+          <label for="s2">Subject 2</label>
+          <input class="mark" id="s2" type="number" min="0" max="100" value="78">
+        </div>
+        <div class="field">
+          <label for="s3">Subject 3</label>
+          <input class="mark" id="s3" type="number" min="0" max="100" value="92">
+        </div>
+        <div class="field">
+          <label for="s4">Subject 4</label>
+          <input class="mark" id="s4" type="number" min="0" max="100" value="74">
+        </div>
+        <div class="field">
+          <label for="s5">Subject 5</label>
+          <input class="mark" id="s5" type="number" min="0" max="100" value="88">
+        </div>
+        <div class="field" style="justify-content: end;">
+          <button id="calculate" class="btn" type="button">Calculate Result</button>
+        </div>
+      </div>
+
+      <div id="gradeResult" class="result">
+        <h3>Result</h3>
+        <p><b>Total:</b> 417/500</p>
+        <p><b>Average:</b> 83.40%</p>
+        <p><b>Grade:</b> A</p>
+        <p><b>Status:</b> <span class="success">PASS</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Grading Rule</h2>
+      <ul>
+        <li>90–100: A+</li>
+        <li>80–89: A</li>
+        <li>70–79: B</li>
+        <li>60–69: C</li>
+        <li>50–59: D</li>
+        <li>Below 50: F</li>
+        <li>Pass requires an average of at least 50 and every subject mark at least 40.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="../js/grade-calculator.js"></script>
+</body>
+</html>

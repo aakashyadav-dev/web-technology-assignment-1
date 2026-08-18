@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scenario 5 · Supermarket Billing</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="page">
+    <nav class="nav">
+      <a href="../index.html">← Assignment I</a>
+      <span class="pill">Scenario 5</span>
+    </nav>
+
+    <header class="hero">
+      <span class="eyebrow">SCENARIO 05</span>
+      <h1>Supermarket Billing System</h1>
+      <p>Enter three purchased products. The JavaScript program calculates the total, applies a 10% discount above ₹2000, and displays the final payable amount.</p>
+    </header>
+
+    <section class="section">
+      <div class="form-grid">
+        <div class="field">
+          <label for="p1">Product 1</label>
+          <input id="p1" type="text" value="Notebook">
+        </div>
+        <div class="field">
+          <label for="q1">Quantity</label>
+          <input id="q1" type="number" min="1" value="5">
+        </div>
+        <div class="field">
+          <label for="r1">Unit Price (₹)</label>
+          <input id="r1" type="number" min="0" step="0.01" value="150">
+        </div>
+
+        <div class="field">
+          <label for="p2">Product 2</label>
+          <input id="p2" type="text" value="Backpack">
+        </div>
+        <div class="field">
+          <label for="q2">Quantity</label>
+          <input id="q2" type="number" min="1" value="2">
+        </div>
+        <div class="field">
+          <label for="r2">Unit Price (₹)</label>
+          <input id="r2" type="number" min="0" step="0.01" value="900">
+        </div>
+
+        <div class="field">
+          <label for="p3">Product 3</label>
+          <input id="p3" type="text" value="Water Bottle">
+        </div>
+        <div class="field">
+          <label for="q3">Quantity</label>
+          <input id="q3" type="number" min="1" value="3">
+        </div>
+        <div class="field">
+          <label for="r3">Unit Price (₹)</label>
+          <input id="r3" type="number" min="0" step="0.01" value="350">
+        </div>
+
+        <div class="field full">
+          <button id="bill" class="btn" type="button">Generate Bill</button>
+        </div>
+      </div>
+
+      <div id="billResult" class="result">
+        <table class="bill-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Unit Price</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Notebook</td><td>5</td><td>₹150.00</td><td>₹750.00</td></tr>
+            <tr><td>Backpack</td><td>2</td><td>₹900.00</td><td>₹1800.00</td></tr>
+            <tr><td>Water Bottle</td><td>3</td><td>₹350.00</td><td>₹1050.00</td></tr>
+          </tbody>
+        </table>
+        <div class="total-box">
+          <div class="metric">Total<strong>₹3600.00</strong></div>
+          <div class="metric">Discount<strong>₹360.00</strong></div>
+          <div class="metric">Final Payable<strong>₹3240.00</strong></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="../js/supermarket-billing.js"></script>
+</body>
+</html>
