@@ -3,7 +3,7 @@
 **Student:** Aakash Yadav  
 **Roll No:** 24CS281  
 **Course:** U21CS501 Web Technology  
-**Semester:** V / Section A
+**Semester:** V / Section B
 
 ## Scenarios
 1. Web Fundamentals
